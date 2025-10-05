@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.main > div {
+    display: grid;
+    padding: 20px;
+    gap: 10px;
+    place-items: center;
+    border: 1px solid black;
+}
+
+.main > div > img {
+    width: 80%;
+    border-radius: 50%;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.main > div > p {
+    text-align: center;
+}
+
+.main > div > button {
+    padding: 8px 16px;
+    border-width: 0;
+    background: black;
+    color: white;
+    border-radius: 16px/50%;
+    cursor: pointer;
+}
+
+.pain {
+    width: 300px;
+    height: 200px;
+    background: green;
+    margin: 20px auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.pain > div {
+    width: 150px;
+    height: 150px;
+    background: red;
+    border-radius: 50%;
+}
+
+.pain:hover {
+    background: white;
+}
+
+.belgium {
+    width: 300px;
+    height: 200px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 1px solid black;
+}
+
+.belgium > div:first-child {
+    background: black;
+}
+
+.belgium > div:nth-child(2) {
+    background: yellow;
+}
+
+.belgium > div:last-child {
+    background: red;
+}
+
+.belgium:hover > div:first-child {
+    background: darkblue;
+}
+
+.belgium:hover > div:nth-child(2) {
+    background: white;
+}
+
+.rain {
+    width: 100%;
+    height: 100vh;
+    background: lightgray;
+    padding: 30px;
+    display: grid;
+    gap: 30px;
+    grid-template-areas: 
+    "area1 area1 area5 area3" 
+    "area4 area2 area2 area3"
+    "area4 area2 area2 area6";
+}
+
+.rain > div {
+    background: gray;
+    display: grid;
+    place-items: center;
+    font-size: 36px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+.rain > div:first-child {
+    grid-area: area1;
+}
+
+.rain > div:nth-child(2) {
+    grid-area: area2;
+}
+
+.rain > div:nth-child(3) {
+    grid-area: area3;
+}
+
+.rain > div:nth-child(4) {
+    grid-area: area4;
+}
+
+.rain > div:nth-child(5) {
+    grid-area: area5;
+}
+
+.rain > div:last-child {
+    grid-area: area6;
+}
+
+
+
+.box {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url('../images/clash-of-clans-base-header-image.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: end;
+    
+}
+.box .member {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.box .member img  {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px white;
+}
+
+.box .member p {
+    width: 186px;
+    margin: 10px auto 0px;
+}
+
+.box .member1 {
+    margin-bottom: 20px;
+}
+.box .member1 img  {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px white;
+}
+.box .member1 p {
+    width: 186px;
+    margin: 10px auto 0px;
+}
+
+.box .member2  {
+    margin-bottom: 20px;
+}
+.box .member2 p {
+    width: 186px;
+    margin: 10px auto 0px;
+}
+
+.box .member2 img  {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px white;
+}
+
+.box2 {
+    width: 100%;
+    height: 100vh;
+    background-color: #5f5cff;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.box2 .box3 {
+    width: 200px;
+    height: 100px;
+    background-color: #37f9fd;
+}
+
+.box2 .box4 {
+    width: 200px;
+    height: 100px;
+    background-color: #9d37fd;
+}
+
+.box2 .box5 {
+    width: 200px;
+    height: 100px;
+    background-color: #fd378d;
+}
