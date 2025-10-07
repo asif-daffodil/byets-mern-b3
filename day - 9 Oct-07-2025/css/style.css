@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+.main > div {
+    width: 200px;
+    height: 200px;
+    background: cornflowerblue;
+    transition: 0.5s;
+}
+
+.main > div:first-child:hover {
+    /* transform: translate(20px); */
+    /* transform: translateX(20px); */
+    /* transform: translateY(20px); */
+    /* transform: translateX(20px) translateY(20px); */
+    transform: translate(30px, 30px);
+}
+
+.main > div:nth-child(2):hover {
+    /* transform: scale(80%); */
+    transform: scale(0.8);
+}
+
+.main > div:nth-child(3):hover {
+    /* transform: skew(45deg); */
+    /* transform: skewX(45deg); */
+    /* transform: skewY(45deg); */
+    /* transform: skewX(45deg) skewY(45deg); */
+    transform: skew(15deg, 15deg);
+}
+
+.main > div:nth-child(4):hover {
+    /* transform: rotate(45deg); */
+    /* transform: rotateZ(45deg); */
+    /* transform: rotateX(180deg); */
+    /* transform: rotateY(180deg); */
+    transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+}
+
+.main > div:nth-child(5):hover {
+    transform: translate(30px, 30px) scale(1.1) skew(15deg, 15deg) rotate(45deg);
+}
+
+.pain {
+    width: 100%;
+    position: relative;
+}
+
+.pain > div {
+    position: absolute;
+    top: 0;
+    width: 200px;
+    height: 200px;
+    /* animation: shohoj 4s infinite linear; */
+    animation-name: shohoj;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    display: grid;
+    place-items: center;
+    color: #fff;
+    font-size: 72px;
+}
+
+
+@keyframes shohoj {
+    0% {
+        left: 20px;
+        background: orangered;
+        transform: rotate(0deg);
+    }
+    50% {
+        left: calc(100% - 220px);
+        background: dodgerblue;
+        transform: rotate(360deg);
+    }
+    100% {
+        left: 20px;
+        background: orangered;
+        transform: rotate(0deg);
+    }
+}
