@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&family=Oswald:wght@200..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+}
+
+@font-face {
+    font-family: jarina;
+    src: url("../fonts/Lato-Bold.ttf");
+}
+
+.container {
+    width: 100%;
+    display: grid;
+}
+
+.container > div {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.container > div > img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.container > div > div {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container > div > div > h3 {
+    font-family: "Lacquer", system-ui;
+}
+
+.container > div > div > button {
+    border-width: 0;
+    padding: 8px 16px;
+    border-radius: 16px/50%;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+    font-family: jarina;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 16px;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 16px;
+    }
+
+    .container > div {
+        background: lightblue;
+    }
+
+    .container > div > div {
+        padding: 16px;
+        gap: 8px;
+    }
+
+    .container > div > div > h3 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1020px) {
+    .container {
+        padding: 24px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    .container > div {
+        background: lightgreen;
+    }
+
+    .container > div > div {
+        padding: 24px;
+        gap: 12px;
+    }
+
+    .container > div > div > h3 {
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 1020px) {
+    .container {
+        padding: 32px;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 32px;
+    }
+
+    .container > div {
+        background: lightgoldenrodyellow;
+    }
+
+    .container > div > div {
+        padding: 32px;
+        gap: 16px;
+    }
+
+    .container > div > div > h3 {
+        font-size: 28px;
+    }
+}
