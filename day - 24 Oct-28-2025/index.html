@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="myDiv" onclick="alert('Danger! your website is hacked')"></div>
+    <div class="myClass" onmouseover="this.textContent = 'Text was changed'"
+        onmouseout="this.textContent = 'This is a demo text for myClass'"></div>
+    <p></p>
+    <div id="myOtherDiv"></div>
+    <div class="myOtherClass"></div>
+
+    <div id="dhaka"></div>
+
+    <div id="bd"></div>
+
+    <button id="addPara">Add Para</button>
+    <div id="paraList"></div>
+
+    <button id="increment">+</button>
+    <span id="num"></span>
+    <button id="decrement">-</button>
+
+    <br><br>
+    <center>
+        <img src="./images/bd.jpg" alt="" id="bgImg">
+        <br>
+        <button id="dhk">Dhaka</button>
+        <button id="bd2">Bangladesh</button>
+    </center>
+
+
+
+
+    <script src="./js/script.js"></script>
+    <script type="module">
+        import { testFunc } from "./js/myJs.js"
+        console.log(testFunc());
+    </script>
+</body>
+
+</html>
