@@ -1,0 +1,2 @@
+# ignore all node modules from all child directories
+**/node_modules/
