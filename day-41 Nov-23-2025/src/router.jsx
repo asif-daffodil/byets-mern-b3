@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router";
 import MainLayouts from "./Layouts/MainLayouts";
 import Home from "./pages/Home";
+import UserDetails from "./pages/UserDetails";
 
 const router = createBrowserRouter([
   {
@@ -10,6 +11,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+      },
+      {
+        path: "/single-user/:id",
+        element: <UserDetails />,
       }
     ],
   },
